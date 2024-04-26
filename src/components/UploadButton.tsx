@@ -163,7 +163,7 @@ function UploadButton({isSubscribed}: {isSubscribed: boolean}) {
             <DialogContent>
 
                 <UploadDropzone isSubscribed={isSubscribed} />
-                Example
+              
             </DialogContent>
         </Dialog>
     )
