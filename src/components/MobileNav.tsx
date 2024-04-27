@@ -3,9 +3,13 @@ import { ArrowRight, Menu } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useEffect, useState } from "react"
+import UserAccountNav from "./UserAccountNav"
+import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/dist/types/server"
 
+  
 
-function MobileNav({isAuth}: {isAuth: boolean}) {
+function MobileNav({isAuth  }: {isAuth: boolean}) {
+  
   const [isOpen, setOpen] = useState<boolean>(false)
 
   const toggleOpen = () => setOpen((prev) => !prev)
@@ -62,6 +66,7 @@ function MobileNav({isAuth}: {isAuth: boolean}) {
               </>
             ) : (
               <>
+              
                 <li>
                   <Link 
                     className="flex items-center w-full font-semibold" 
